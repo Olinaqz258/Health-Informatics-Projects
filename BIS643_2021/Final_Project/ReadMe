@@ -1,0 +1,3 @@
+Final project for BIS634 Fall 2021. 
+
+Web server made to display data and analysis based on the 'Accidental_Drug_Related_Deaths_2012-2020' dataset. All graphs are dynamically generated, and can be accessed via the drop down menu on the homepage. 
