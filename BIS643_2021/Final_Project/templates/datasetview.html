@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h2{
+            background-color: bisque;
+        }
+    </style>
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1, width=device-width">
+    <title>View Information</title>
+</head>
+<body background="/static/background.webp">
+<h2><center><b>You selected the analysis type: {{ analysis_type }}.</b></center></h2>
+<br>
+<br>
+<b><a href="/">Click Here to Return Home</a></b>
+<br>
+<br>
+<br>
+<b>The results for analyzing {{ analysis_type }} is as follows</b>
+<p>
+<center>
+    <br>
+    <b>{{male}}% of cases were of men.</b><br>
+    <b>{{female}}% of cases were of women.</b><br>
+    <b>The other cases are of gender "Unknown".</b><br>
+    <b>The average age in dataset is {{aa}} years old.</b></center>
+<br>
+<br>
+<br>
+<b>The Complete Dataset Is Shown Below</b>
+    {% for table in tables %}
+    {{titles[loop.index]}}
+    {{ table|safe }}
+    {% endfor %}
+</center>
+</body>
+</html>

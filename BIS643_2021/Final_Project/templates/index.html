@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="initial-scale=1, width=device-width">
+        <title>Final Project BIS634 Fall 2021 | Olina Zhu HOMEPAGE</title>
+    </head>
+    <body background="/static/background.webp">
+
+    <p style="font-size:50px">
+        <h2><center>Welcome to the Homepage for Final Project BIS634 Fall 2021 | Olina Zhu <img src={{gif}} height="80"> </center></h2>
+    </p>
+        <b>This webpage utilizes the dataset "accidental-drug-related-deaths-2012-2020" found <a href="https://catalog.data.gov/dataset/accidental-drug-related-deaths-2012-2018">here.</a> </b>
+        <br>
+    <br> <b>The publisher is data.ct.gov and it is a public access dataset - intended for public access and use.</b><br>
+        <br>
+        <br>
+        <a href="https://catalog.data.gov/dataset/accidental-drug-related-deaths-2012-2018">
+        <center><img src={{img}} height="500" width="475" style="border:5px solid black"></center>
+        </a>
+        <br>
+        <br>
+        <br>
+       <center><b>Please choose from below items to generate and view analysis.</b></center>
+        <br>
+        <br>
+        <form action="/info" method="get">
+            <select name="Actions">
+                <option value="" disabled selected>Select From Below</option>
+                {% for i in analysis_options %}
+                    <option>{{ i }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Generate and View">
+        </form>
+        <p>
+    <center><b>Plots of accidental drug-related deaths time series and drug use by type in 2012-2020 in Connecticut is shown below.</b></center>
+    <br>
+    <center><img src={{trend}} height="400">
+    <br>
+     <br>
+        <img src={{drugcount}} height="400"><br></center>
+        </p>
+    </body>
+</html>
