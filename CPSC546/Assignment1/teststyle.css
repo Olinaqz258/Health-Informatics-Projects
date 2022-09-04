@@ -1,0 +1,35 @@
+body {
+    background-color: dimgray;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 40px; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding: 50px;
+  }
+  
+  p {
+    color: white; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 50px; 
+    padding-right: 50px; 
+  }
+  
+  .highlight{
+    color: yellow; 
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px; 
+  }
+
+  li{
+    padding-left: 50px; 
+    padding-right: 50px;  
+    margin-left: 80px; 
+    margin-right: 59px; 
+    color: black; 
+    background-color: white; 
+  }
